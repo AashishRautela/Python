@@ -10,7 +10,7 @@ def make(v):
 def find(v):
     if (v == parent[v]):
         return v;
-    #parent[v]=find(parent[v]);
+    parent[v]=find(parent[v]);
     return find(parent[v]);
 def Union(a,b):
     a = find(a);
