@@ -17,7 +17,7 @@ def Union(a,b):
     b = find(b);
     if(a!=b):
         if(size[a]<size[b]):
-            swap(a,b);
+            a,b=b,a;
         parent[b]=a;
     size[a]+=size[b];
 
